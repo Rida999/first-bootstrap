@@ -1,0 +1,27 @@
+@media(max-width:800px){
+    #Row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #col{
+        margin-right: 150px;
+    }
+
+    #button{
+        width: 400px;
+    }
+
+    #img{
+        width: 400px;
+    }
+}
+
+@media(max-Width:600px){
+    #col{
+        margin-right:200px ;
+    }
+}

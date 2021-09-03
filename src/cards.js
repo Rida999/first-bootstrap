@@ -31,11 +31,11 @@ const Foods = () => {
     ];
    
     return ( 
-        <Row xs={1} md={2} className="g-4" style={{marginTop:"30px",display:"flex",alignItem:"center",justifyContent:"space-around",width:"100%",height:"100%",flexWrap:"wrap"}}>
+        <Row xs={1} md={2} className="g-4" id="Row" style={{marginTop:"30px",display:"flex",alignItem:"center",justifyContent:"space-around",width:"100%",height:"100%",flexWrap:"wrap"}}>
   {blogs.map((blogs,_, idx) => (
-    <Col style={{width:"40%",height:"100%"}}>
+    <Col style={{width:"40%",height:"100%"}} id="col">
       <Card>
-        <button style={{border:"none",background:"none",padding:"0"}}><a href={`/${blogs.id}`}><Card.Img variant="top" src={blogs.img} style={{height:"300px",width:"100%",margin:"0"}} /></a></button>
+        <button id="button" style={{border:"none",background:"none",padding:"0"}}><a href={`/${blogs.id}`}><Card.Img  variant="top" src={blogs.img} id="img" style={{height:"300px",width:"100%",margin:"0"}} /></a></button>
         <Card.Body>
           <Card.Title>{blogs.title}</Card.Title>
           <Card.Text>
